@@ -1,0 +1,48 @@
+%% マージンの調整
+%% 以下の値がクラスのデフォルト，必要に応じて変更可能
+% \setpagelayout{top=25mm,bottom=30mm,inner=30mm,outer=20mm}
+
+
+\usepackage{lipsum}
+\usepackage{url}
+\usepackage{tikz}
+
+
+\begin{document}
+\jyear{平成27}  % 年度
+\jtitle{タイトルを炊いとる}  % タイトル
+\jauthor{擬音 太郎}  % 著者名
+\jsupervisor{指導 四太郎 准教授}  % 指導教員
+\jexaminer{主査 三太郎 教授}  % 主査
+\jdate{平成30年2月}  % 日付
+
+
+\frontmatter  % 序文スタイル（ページ番号に注目）
+
+\jmaketitle
+\input{00-abstract.tex}
+\tableofcontents  % 目次
+\listoffigures  % 図目次
+\listoftables  % 表目次
+
+
+\mainmatter  % 本文
+
+\input{10-introduction.tex}
+\input{20-usage.tex}
+\input{30-figtab.tex}
+\input{40-conclusion.tex}
+
+\input{70-acknowledgement.tex}
+
+
+\appendix
+
+\input{80-appendix.tex}
+
+
+\backmatter
+
+\input{99-bibliography.tex}
+
+\end{document}

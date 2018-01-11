@@ -1,0 +1,31 @@
+\chapter{図表のサンプル}
+
+\section{図}
+図表はページの上部に出す．TikZで描画した図を図\ref{fig:tikz}に示す．
+\begin{figure}[t]
+  \caption[TikZによる作図．]{
+    TikZによる作図．
+    キャプションにはいろいろ書いても目次には概要しか出なくて済む．
+  }
+  \label{fig:tikz}
+  \centering
+  \begin{tikzpicture}
+    \fill [circle, red] (0, 0) circle [x radius=3cm, y radius=1cm, rotate=30];
+  \end{tikzpicture}
+\end{figure}
+
+
+\section{表}
+面倒くさがりながらも作成した雑な表を表\ref{tab:what}に示す．
+\begin{table}[t]
+  \centering
+  \begin{tabular}{cc}
+    表 & 表？ \\ \hline
+    はい & はい \\
+    いいえ & NULL
+  \end{tabular}
+  \caption[謎の表．]{
+    これは何の表ですか．\lipsum[2]
+  }
+  \label{tab:what}
+\end{table}

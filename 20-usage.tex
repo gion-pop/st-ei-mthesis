@@ -1,0 +1,73 @@
+\chapter{クラスファイルについて}
+\label{chap:usage}
+
+\section{BXjscls由来の設定・コマンド}
+\subsection{クラスオプション}
+BXjsclsパッケージをベースに用いているので，~\cite{bxjscls-manual}を参考に
+必要なクラスオプションを取捨選択してほしい．
+
+\paragraph{{p\LaTeX}の場合}
+プリアンブルに
+\verb|\documentclass[dvipdfmx,platex]{st-ei-mthesis}|
+と記述．
+
+\paragraph{{Lua\LaTeX}の場合}
+プリアンブルに
+\verb|\documentclass[lualatex]{st-ei-mthesis}|
+と記述．
+
+
+\subsection{コマンド}
+BXjsclsパッケージが提供するもののうち，
+ユーザーにとって重要そうなもののみについて簡単な説明をする．
+
+\paragraph{setpagelayout}
+余白などの用紙使いについて設定できる．
+書式については\texttt{geometry}パッケージのものをそのまま使えるので，
+パッケージのドキュメントやWebの記事などを参考に調整すればよい．
+
+
+\section{新たに定義したコマンド}
+
+\subsection{タイトルページ用のコマンド}
+\label{sec:title-cmd}
+\begin{itemize}
+\item
+  \texttt{jyear}: ○○年度の○○の部分．
+  和暦とか西暦とか両方考えるのが面倒だったので使う側に任せる．
+\item
+  \texttt{jtitle}: 論文のタイトル．
+\item
+  \texttt{jauthor}: 著者名．
+\item
+  \texttt{jsupervisor}: 指導教員．
+\item
+  \texttt{jexaminer}: 主査．
+\item
+  \texttt{jdate}: 日付．
+\end{itemize}
+以上を設定した状態で\verb|\jmaketitle|によってタイトルページが生成できる．
+
+
+\subsection{要旨ページ用のコマンド}
+\ref{sec:title-cmd}節で説明したもののうち
+\texttt{jyear}, \texttt{jtitle}，\texttt{jauthor}が設定してある状態で
+\verb|\begin{jabstract}|〜\verb|\end{jabstract}|環境内に
+要旨の文章を記述すると要旨ページが作成される．
+このときあらかじめ\texttt{jkeywords}にキーワード群が設定されていれば，
+要旨の下にキーワード一覧が出力される．
+見出しを『論文要旨』以外の文言に変更したければ
+\verb|\begin{jabstract}[要旨]|などとすればよい．
+
+
+\subsection{謝辞用環境}
+\verb|\begin{acknowledgement}|〜\verb|\end{acknowledgement}|環境内に
+謝辞を書ける．
+要旨環境と同様にオプションで見出しを変更できる．
+
+
+\section{試し刷りとか添削とか}
+\verb|\documentclass[platex,dvipdfmx,oneside,openany]{st-ei-mthesis}|
+などとすれば余分な空白ページが出力されない．
+\verb|\setpagelayout{hmargin=20mm}|などとして
+左右のマージンを同じにしてしまってもよいかも．

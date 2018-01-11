@@ -1,0 +1,26 @@
+\chapter{はじめに}
+\begin{chapterabstract}
+  2010年代も後半になって\texttt{jreport}とかの
+  標準和文文書クラスを使うのはつらすぎる．
+\end{chapterabstract}
+
+\section{このクラスファイルについて}
+これは僕が所属コースの修士論文を書くために作成した
+{\LaTeXe}クラスファイルのようなものである．
+弊ラボには\cite{mthesis-tmpl}の修士論文テンプレートを
+博士課程の人間が手入れしたものが置いてあるのだが，
+僕は{p\LaTeXe}新ドキュメントクラスと同等の組版結果を{Lua\LaTeX}で得たいので，
+そのテンプレートを参考にして{p\LaTeX}依存を取り除き，
+またいくつかのコマンドを改めて定義したものを修士論文用クラスとすることにした．
+
+\section{導入}
+\texttt{st-ei-mthesis.cls}を論文原稿のディレクトリに保存し，原稿から
+\begin{verbatim}
+\documentclass[dvipdfmx,platex]{st-ei-mthesis}
+\end{verbatim}
+としてクラスファイルを読み込む（{p\LaTeX}+dvipdfmxの場合）．
+詳細については第\ref{chap:usage}章を参照のこと．
+
+\section{本文書の構成}
+以降の章でクラスファイルの使いかた，
+図表挿入のテストをやったりやらなかったりする．
