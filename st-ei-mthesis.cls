@@ -42,7 +42,7 @@
   \mthesis@jmaketitle
   \endgroup
 }
-\newcommand{\mthesis@jmaketitle}{%
+\def\mthesis@jmaketitle{%
   \thispagestyle{empty}
   \begin{center}
     {\Large \mthesis@jyear 年度~修士論文}%
