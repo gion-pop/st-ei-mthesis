@@ -18,9 +18,10 @@
   truedimen,
   ignoreall,
   nohead,
-  top=25truemm,
-  bottom=30truemm,
-  inner=30mm,
+  top=25mm,
+  bottom=30mm,
+  footskip=15mm,
+  inner=35mm,
   outer=20mm,
 }
 
