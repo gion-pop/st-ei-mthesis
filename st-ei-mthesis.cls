@@ -49,7 +49,7 @@
     \vfill
     {\huge \textbf{\mthesis@jtitle}}%
     \vfill
-    {\Large 群馬大学大学院理工学府~理工学専攻\\電子情報・数理教育プログラム}%
+    {\Large 群馬大学大学院理工学府~理工学専攻\\電子情報・数理教育プログラム}%
     \vspace{0.5cm}\par
     {\LARGE \mthesis@jauthor}%
     \vspace{2cm}\par
@@ -76,7 +76,7 @@
   \section*{キーワード}\mthesis@jkeywords \par
   \fi
   \vspace{2.5cm}\par
-  {群馬大学大学院理工学府~理工学専攻~電子情報・数理教育プログラム}%
+  {群馬大学大学院理工学府~理工学専攻~電子情報・数理教育プログラム}%
   \begin{flushright}
     \mthesis@jauthor
   \end{flushright}
