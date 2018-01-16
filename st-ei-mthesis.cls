@@ -6,11 +6,11 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{st-ei-mthesis}[2018/1/17 v0.2 yo.]
 
-%% ユーザー指定のオプションを bxjsbook に渡す
+%% ユーザー指定のオプションを bxjsreport に渡す
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{bxjsreport}}
 \ProcessOptions\relax
 
-%% 既定オプションつきで bxjsbook をロード
+%% 既定オプションつきで bxjsreport をロード
 \LoadClass[a4paper,twoside,openright,nomag,ja=standard]{bxjsreport}
 
 %% 余白の設定
