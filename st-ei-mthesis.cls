@@ -4,7 +4,7 @@
 %%% ベースの設定
 %% お約束
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{st-ei-mthesis}[2018/1/11 v0.1 yo.]
+\ProvidesClass{st-ei-mthesis}[2018/1/17 v0.2 yo.]
 
 %% ユーザー指定のオプションを bxjsbook に渡す
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{bxjsreport}}
